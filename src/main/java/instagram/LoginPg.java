@@ -13,7 +13,7 @@ public class LoginPg {
     WebDriver driver;
     Properties properties;
 
-    public LoginPg(WebDriver driver, Properties properties) throws Exception {
+    public LoginPg(WebDriver driver, Properties properties) {
         this.driver=driver;
         this.properties=properties;
         PageFactory.initElements(driver, this);
@@ -76,7 +76,7 @@ public class LoginPg {
     public void enterInstaPassword() {
         String password_Instagram = properties.getProperty("password");
         password.sendKeys(password_Instagram);
-        loginBtn.click();
+
     }
 
     public void clickLoginBtn() {
