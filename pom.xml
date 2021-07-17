@@ -49,11 +49,17 @@
     </dependency>
     <!--cucumber-->
 
+    <dependency>
+      <groupId>info.cukes</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>1.2.0</version>
+      <scope>test</scope>
+    </dependency>
 
     <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-java</artifactId>
-      <version>6.9.1</version>
+      <groupId>info.cukes</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>1.2.0</version>
     </dependency>
 
     <dependency>
@@ -89,12 +95,7 @@
       <version>1.2.5</version>
     </dependency>
 
-    <dependency>
-      <groupId>info.cukes</groupId>
-      <artifactId>cucumber-junit</artifactId>
-      <version>1.2.6</version>
-      <scope>test</scope>
-    </dependency>
+
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-core</artifactId>

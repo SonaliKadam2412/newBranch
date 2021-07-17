@@ -7,11 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\91812\\git\\SeleniumFrameWork\\src\\test\\resources\\Instagram.feature", tags = {"@Test"}, plugin = {"pretty", "html:target/cucumber-html-report",
-        "json:target/cucumber.json",
-        "junit:target/cucumber.xml"}, glue = {"step_definition.Step_Definition"}
-
-
+        features = "src/test/resources/Instagram.feature"
+        ,glue = {"step_definition"}
+        ,monochrome = true
+        ,plugin = {"html:target/Report/cucumber-html-report", "json:target/Report/cucumber-json-report.json" }
 )
 public class RunnerClass extends AbstractTestNGCucumberTests {
 }
